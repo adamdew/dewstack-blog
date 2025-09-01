@@ -1,9 +1,19 @@
 version: "3.9"
 
 services:
-  zola:
-    build: .
+  zola-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dewstack-blog
     ports:
-      - "80:80"
+      - "80:80"          # Expose container port 80 on host port 80
     restart: unless-stopped
+    environment:
+      # Optional: add env vars here if needed
+      TZ: "America/New_York"
+    # volumes:
+      # Optional: mount content locally for testing/dev
+      # - ./content:/project/content:ro
+      # - ./themes:/project/themes:ro
 
