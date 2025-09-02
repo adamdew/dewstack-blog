@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: dewstack-blog
     ports:
-      - "80:80"          # Expose container port 80 on host port 80
+      - "80:80"   # bind to all IPv6 interfaces
     restart: unless-stopped
     environment:
       # Optional: add env vars here if needed
