@@ -1,11 +1,12 @@
 base_url = "https://blog.dewstack.dev"
 theme = "tabi"
-title = "dewstack blog | life, code and bbq"
+title = "~/dewstack"
 author = "Adam Dew"
 generate_feeds = true
 compile_sass = true
 minify_html = true
 build_search_index = true
+default_language = "en"
 
 taxonomies = [{name = "tags", feed = true}]
 
@@ -35,7 +36,7 @@ index_format = "elasticlunr_json"
 
 
 menu = [
-    { name = "blog", url = "/", trailing_slash = true },
+    { name = "blog", url = "/blog", trailing_slash = true },
 ]
 
 
