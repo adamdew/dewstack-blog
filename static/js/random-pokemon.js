@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .replace(/['’]/g, "")
     .replace(/\s+/g, "-");
 
-  const imgUrl = "https://img.pokemondb.net/sprites/home/normal/" + slug + ".png";
+  const imgUrl = "images/mons/" + slug + ".png";
 
   const el = document.querySelector("#banner-home-img");
   if (el) {
