@@ -7,7 +7,8 @@ description = "Pre-press software development in PHP"
 tags = ["svg", "js", "ecommerce", "image processing", "prepress", "domdocument"]
 +++
 
-*This is the second post in this series, see (first posturl)first post here.*
+*This is the second post in this series, check out out my [first post in the series](@/blog/extending-legacy-code-p1.md).
+ here.*
 
 Hey guys, In this post ill be reviewing how to use the PHP DOMDocument class to add some advanced prepress capabilities to PHP prepress software. My main use of it so far has been splitting one SVG into 2 based on some condition and adding cut lines to the print files. But I'm sure there are way more use cases out there.
 
